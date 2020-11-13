@@ -10,7 +10,7 @@ import timeit
 
 
 def sieve(n):
-    ls = list(range(n ** 2))
+    ls = list(range((n ** 2) + 3))
     ls[1] = 0
     for i in ls:
         if i > 1:
