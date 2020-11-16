@@ -42,7 +42,7 @@ class Column:
 
     def __mul__(self, other):
         assert self.BASE == other.BASE, "Системы счисления должны совпадать"
-        sum_ls = []
+        sum_ls = deque()
         for idx in range(1, len(other.digits) + 1):
             row_value = deque()
             mem = 0
