@@ -40,7 +40,7 @@ def merge_list(list_1, list_2):
     return result
 
 
-arr = [random.uniform(MIN_ITEM, MAX_ITEM - 1) for _ in range(SIZE)]
+arr = [random.uniform(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
 print('Не отсортированный массив:', arr)
 arr = merge_sort(arr)
 print('Отсортированный массив:   ', arr)
